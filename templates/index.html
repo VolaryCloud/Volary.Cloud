@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VolaryCloud - Open-source applications that respect your digital rights, built with privacy and security at their core.">
+    <meta name="keywords" content="VolaryCloud, open source, privacy, security, applications, digital rights, free software">
+    <meta name="author" content="VolaryCloud">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://volary.cloud/">
+    <meta property="og:title" content="VolaryCloud - Privacy-Focused Applications">
+    <meta property="og:description" content="Open-source applications that respect your digital rights, built with privacy and security at their core.">
+
+    <meta property="twitter:card" content="website">
+    <meta property="twitter:url" content="https://volary.cloud/">
+    <meta property="twitter:title" content="VolaryCloud - Privacy-Focused Applications">
+    <meta property="twitter:description" content="Open-source applications that respect your digital rights, built with privacy and security at their core.">
+
+    <link rel="icon" type="image/png" href="https://static-content.volary.cloud/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://static-content.volary.cloud/images/apple-touch-icon.jpg">
+
+    <title>VolaryCloud - Privacy-Focused Applications</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FTQZXL0N9G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FTQZXL0N9G');
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            950: '#082f49',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html{scroll-behavior:smooth;}
+        .loader{border-top-color:#3498db;animation:spinner 1.5s linear infinite;}
+        @keyframes spinner{0%{transform: rotate(0deg);}100%{transform:rotate(360deg);}}
+        .code-container{overflow-x:auto;max-width:100%;}
+        .hero-gradient {
+            background: linear-gradient(135deg, #075985 0%, #0c4a6e 100%);
+        }
+        .card-hover {
+            transform: translateY(0);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <header class="bg-primary-900 text-white shadow-lg sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3"><a href="/" class="flex items-center space-x-2">
+                <img src="https://static-content.volary.cloud/images/favicon.png" alt="VolaryCloud Logo" class="h-10 w-10">
+                <h1 class="text-2xl font-bold">VolaryCloud</h1>
+            </a></div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="/" class="hover:text-primary-300 transition duration-300 font-medium">Home</a>
+                <a href="/about" class="hover:text-primary-300 transition duration-300 font-medium">About</a>
+                <a href="mailto:phillip@vtolvr.tech" class="hover:text-primary-300 transition duration-300 font-medium">Contact</a>
+            </nav>
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu hidden bg-primary-800 md:hidden">
+        <a href="/" class="block py-2 px-4 text-sm text-white hover:bg-primary-700">Home</a>
+        <a href="/about" class="block py-2 px-4 text-sm text-white hover:bg-primary-700">About</a>
+        <a href="mailto:phillip@vtolvr.tech" class="block py-2 px-4 text-sm text-white hover:bg-primary-700">Contact</a>
+    </div>
+
+    <section class="py-24 hero-gradient text-white">
+        <div class="container mx-auto px-4 max-w-5xl text-center">
+            <div class="mb-8">
+                <img src="https://static-content.volary.cloud/images/favicon.png" alt="VolaryCloud Logo" class="h-24 w-24 mx-auto mb-6">
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Privacy. Security. Freedom.</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto leading-relaxed">Open-source applications that respect your digital rights, built with privacy and security at their core.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="bg-white text-primary-800 hover:bg-primary-100 px-6 py-3 rounded-lg font-medium transition duration-300 shadow-lg">Explore Projects</a>
+                <a href="https://github.com/VolaryCloud" class="border border-white text-white hover:bg-white/10 px-6 py-3 rounded-lg font-medium transition duration-300">View GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white" id="about-short">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-primary-800">About VolaryCloud</h2>
+                <div class="h-1 w-20 bg-primary-500 mx-auto"></div>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-8 shadow-lg">
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">I'm a 14-year-old developer from Norway passionate about creating privacy and security-focused applications that are 100% free and open-source.</p>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">I believe everyone deserves digital tools that respect their privacy and security without compromising on features or charging premium fees.</p>
+                <div class="flex flex-wrap gap-4 justify-center mt-8">
+                    <div class="bg-white px-5 py-3 rounded-lg shadow flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                        <span>Privacy-First</span>
+                    </div>
+                    <div class="bg-white px-5 py-3 rounded-lg shadow flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                        </svg>
+                        <span>Open Source</span>
+                    </div>
+                    <div class="bg-white px-5 py-3 rounded-lg shadow flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>User-Friendly</span>
+                    </div>
+                    <div class="bg-white px-5 py-3 rounded-lg shadow flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>Always Free</span>
+                    </div>
+                </div>
+                <div class="mt-10 text-center">
+                    <a href="/about" class="inline-block bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50" id="projects">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-primary-800">My Projects</h2>
+                <div class="h-1 w-20 bg-primary-500 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Explore the open-source applications I've developed with a focus on privacy and security.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {% for project in projects %}
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <div class="bg-primary-800 h-2"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary-800">{{ project.name }}</h3>
+                        <p class="text-gray-600 mb-6">{{ project.description }}</p>
+                        <div class="flex flex-col sm:flex-row gap-2 mt-auto pt-4 border-t border-gray-100">
+                            <a href="{{ project.github }}" class="text-primary-600 hover:text-primary-800 font-medium flex items-center justify-center" target="_blank">
+                                <svg class="h-5 w-5 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                            {% if project.website %}
+                            <a href="{{ project.website }}" class="text-primary-600 hover:text-primary-800 font-medium flex items-center justify-center" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                                </svg>
+                                <span>Website</span>
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-primary-900 text-white">
+        <div class="container mx-auto px-4 max-w-5xl text-center">
+            <h2 class="text-3xl font-bold mb-6">Interested in Collaborating?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">I'm always open to working with others who share my passion for privacy and open-source development.</p>
+            <a href="mailto:phillip@vtolvr.tech" class="bg-white text-primary-800 hover:bg-primary-100 px-8 py-4 rounded-lg font-medium transition duration-300 shadow-lg">Get In Touch</a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0 flex items-center">
+                    <img src="https://static-content.volary.cloud/images/favicon.png" alt="VolaryCloud Logo" class="h-8 w-8 mr-3">
+                    <div>
+                        <h3 class="text-xl font-bold">VolaryCloud</h3>
+                        <p class="text-gray-400">Privacy-focused applications</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+                    <a href="/" class="text-gray-300 hover:text-white transition duration-300">Home</a>
+                    <a href="/about" class="text-gray-300 hover:text-white transition duration-300">About</a>
+                    <a href="mailto:phillip@vtolvr.tech" class="text-gray-300 hover:text-white transition duration-300">Contact</a>
+                    <a href="https://github.com/VolaryCloud" class="text-gray-300 hover:text-white transition duration-300 flex items-center">
+                        <svg class="h-5 w-5 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2025 VolaryCloud. All projects are free and open source.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
